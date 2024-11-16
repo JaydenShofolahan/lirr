@@ -4,26 +4,9 @@
 #Modified by:  Jayden Shofolahan
 
 def computeFare(zone, ticketType):
- 
-     """
-     Takes as two parameters: the zone and the ticket type.
-     Returns the LIRR Transit fare, as follows:
-
-     If the zone is 1 and the ticket type is "peak", the fare is 8.75.
-     If the zone is 1 and the ticket type is "off-peak", the fare is 6.25.
-     If the zone is 2 or 3 and the ticket type is "peak", the fare is 10.25.
-     If the zone is 2 or 3 and the ticket type is "off-peak", the fare is 7.50.
-     If the zone is 4 and the ticket type is "peak", the fare is 12.00.
-     If the zone is 4 and the ticket type is "off-peak", the fare is 8.75.
-     If the zone is 5, 6, or 7 and the ticket type is "peak", the fare is 13.50.
-     If the zone is 5, 6, or 7 and the ticket type is "off-peak", the fare is 9.75.
-     If the zone is greater than 8, return a negative number (since your calculator does not handle inputs that high).
-     """
-     
   fare = 0
      
-  zone = int(input("Enter a zone"))
-  ticketType = input("Enter a ticket type)
+
   if zone == 1 and ticketType == "peak" or zone == 4 and ticketType == "off-peak":
     fare = fare + 8.75
   elif zone == 1 and ticketType == "off-peak":
