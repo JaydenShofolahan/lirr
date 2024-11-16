@@ -17,10 +17,18 @@ def computeFare(zone, ticketType):
     fare = fare + 7.50 
   elif zone == 4 and ticketType == "peak":
     fare = fare + 12.00 
-  elif (zone == 5 or zone == 6 or zone == 7) and ticketType == "peak":
+  elif zone == 5 and ticketType == "peak":
     fare = fare + 13.50 
-  elif (zone == 5 or zone == 6 or zone == 7) and ticketType == "off-peak":
-    fare == fare + 9.75 
+  elif zone == 6 and ticketType == "peak":
+    fare = fare + 13.50 
+  elif zone == 7 and ticketType == "peak":
+    fare = fare + 13.50 
+  elif zone == 5 and ticketType == "off-peak":
+    fare = fare + 9.75 
+  elif zone == 6 and ticketType == "off-peak":
+    fare = fare + 9.75
+  elif zone == 7 and ticketType == "off-peak":
+    fare = fare + 9.75 
   else:
     fare = fare - 1 
   
